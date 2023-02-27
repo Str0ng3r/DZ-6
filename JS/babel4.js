@@ -1,9 +1,7 @@
 "use strict"
 const spanEl = document.querySelector("#value");
-console.log(spanEl)
-const buttonPlus = document.querySelector('#counter button[data-action="increment"]');
-console.log(buttonPlus)
-const buttonMinus = document.querySelector('#counter button[data-action="decrement"]')
+const buttonPlus = document.querySelector('button[data-action="increment"]');
+const buttonMinus = document.querySelector('button[data-action="decrement"]')
 let defoltInt = 0
 const minusValue = (event) => {
   defoltInt -= 1

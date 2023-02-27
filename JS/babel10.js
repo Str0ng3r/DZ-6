@@ -8,11 +8,6 @@
     .toString(16)
     .padStart(6, 0)}`;
 }
- console.log(inputValue)
- console.log(addBlock)
- console.log(buttonAdd)
- console.log(buttonRemove)
-
 function removeInner () {
   addBlock.innerHTML = ''
 }
@@ -31,7 +26,9 @@ for (let i = 0;i < amount; i += 1){
 }
  }
  buttonAdd.addEventListener('click',() => {
+  addBlock.innerHTML= ''
   const amount = inputValue.value
   createBoxes(amount)
+  inputValue.value = ''
 })
 buttonRemove.addEventListener('click',removeInner)

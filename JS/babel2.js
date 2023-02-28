@@ -8,7 +8,7 @@ const ingredients = [
     "Herbs",
     "Condiments",
   ];
-  const textHTML = []
+  
   ingredients.forEach(el => {
    const liList = document.createElement('li')
 liList.textContent = el

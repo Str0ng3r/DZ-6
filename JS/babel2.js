@@ -8,11 +8,13 @@ const ingredients = [
     "Herbs",
     "Condiments",
   ];
-  
-  ingredients.forEach(el => {
+
+ const newMassive = ingredients.map(el => {
    const liList = document.createElement('li')
 liList.textContent = el
 liList.classList.add('item')
-categ.append(liList)
+return liList
   })
+  console.log(newMassive)
+  categ.append(...newMassive)
       // categ.append('afterbegin',ingredients.map(el => `<li class='item'>${el}</li>`).join(""))

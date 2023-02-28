@@ -8,4 +8,11 @@ const ingredients = [
     "Herbs",
     "Condiments",
   ];
-      categ.insertAdjacentHTML('afterbegin',ingredients.map(el => `<li class='item'>${el}</li>`).join(""))
+  const textHTML = []
+  ingredients.forEach(el => {
+   const liList = document.createElement('li')
+liList.textContent = el
+liList.classList.add('item')
+categ.append(liList)
+  })
+      // categ.append('afterbegin',ingredients.map(el => `<li class='item'>${el}</li>`).join(""))
